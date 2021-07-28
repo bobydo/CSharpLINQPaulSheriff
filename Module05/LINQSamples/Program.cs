@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LINQSamples.ViewModelClasses;
+using System;
 
 namespace LINQSamples
 {
@@ -14,7 +15,7 @@ namespace LINQSamples
       };
 
       // Call a sample method
-      vm.SequenceEqualProdctsWithCompareClass();
+      vm.GroupJoin();
 
       // Display Product Collection
       foreach (var item in vm.Products) {

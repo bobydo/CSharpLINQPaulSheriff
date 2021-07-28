@@ -3,9 +3,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace LINQSamples
+namespace LINQSamples.ViewModelClasses
 {
-  public class SamplesViewModel
+  public partial class SamplesViewModel
   {
     #region Constructor
     public SamplesViewModel()
