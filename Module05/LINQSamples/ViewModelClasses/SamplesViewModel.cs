@@ -23,13 +23,70 @@ namespace LINQSamples
     public string ResultText { get; set; }
     #endregion
 
-    #region ForEach Method
-    /// <summary>
-    /// ForEach allows you to iterate over a collection to perform assignments within each object.
-    /// In this sample, assign the Length of the Name property to a property called NameLength
-    /// When using the Query syntax, assign the result to a temporary variable.
-    /// </summary>
-    public void ForEach()
+    public void WhereExpression()
+        {
+            string search = "L";
+            decimal cost = 100;
+            if(UseQuerySyntax)
+            {
+                Products = (from prod in Products
+                            where prod.Name.StartsWith(search)
+                            && prod.StandardCost >cost
+                            select prod).ToList();
+            }
+            else
+            {
+                Products = Products
+                    .Where(p => p.Name.StartsWith(search)
+                    && p.StandardCost > cost).ToList();
+            }
+
+        }
+
+        public void WhereExtension()
+        {
+            string color = "Red";
+            if (UseQuerySyntax)
+            {
+                Products = (from prod in Products
+                            select prod).ByColor(color).ToList();
+            }
+            else
+            {
+                Products = Products.ByColor(color).ToList();
+            }
+
+        }
+
+        public void WhereThrowException()
+        {
+            try { 
+                string color = "Red";
+                if (UseQuerySyntax)
+                {
+                    var product = (from prod in Products
+                                select prod).ByColor(color).First();
+                }
+                else
+                {
+                    //more thna 2 throw exception
+                    var product = Products.ByColor(color).SingleOrDefault();
+                }
+            }
+            catch
+            {
+                //not found
+            }
+        }
+
+
+        #region ForEach Method
+        /// <summary>
+        /// ForEach allows you to iterate over a collection to perform assignments within each object.
+        /// In this sample, assign the Length of the Name property to a property called NameLength
+        /// When using the Query syntax, assign the result to a temporary variable.
+        /// </summary>
+        public void ForEach()
     {
       if (UseQuerySyntax) {
         // Query Syntax

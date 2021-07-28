@@ -3,6 +3,9 @@ using System.Linq;
 
 namespace LINQSamples
 {
+    /// <summary>
+    /// extension method for customized filter
+    /// </summary>
   public static class ProductHelper
   {
     #region ByColor
