@@ -1,3 +1,8 @@
+D:\CSharpLINQPaulSheriff\Module05\LINQSamples\obj\Debug\net5.0\LINQSamples.csprojAssemblyReference.cache
+D:\CSharpLINQPaulSheriff\Module05\LINQSamples\obj\Debug\net5.0\LINQSamples.GeneratedMSBuildEditorConfig.editorconfig
+D:\CSharpLINQPaulSheriff\Module05\LINQSamples\obj\Debug\net5.0\LINQSamples.AssemblyInfoInputs.cache
+D:\CSharpLINQPaulSheriff\Module05\LINQSamples\obj\Debug\net5.0\LINQSamples.AssemblyInfo.cs
+D:\CSharpLINQPaulSheriff\Module05\LINQSamples\obj\Debug\net5.0\LINQSamples.csproj.CoreCompileInputs.cache
 D:\CSharpLINQPaulSheriff\Module05\LINQSamples\bin\Debug\net5.0\LINQSamples.exe
 D:\CSharpLINQPaulSheriff\Module05\LINQSamples\bin\Debug\net5.0\LINQSamples.deps.json
 D:\CSharpLINQPaulSheriff\Module05\LINQSamples\bin\Debug\net5.0\LINQSamples.runtimeconfig.json
@@ -5,11 +10,6 @@ D:\CSharpLINQPaulSheriff\Module05\LINQSamples\bin\Debug\net5.0\LINQSamples.runti
 D:\CSharpLINQPaulSheriff\Module05\LINQSamples\bin\Debug\net5.0\LINQSamples.dll
 D:\CSharpLINQPaulSheriff\Module05\LINQSamples\bin\Debug\net5.0\ref\LINQSamples.dll
 D:\CSharpLINQPaulSheriff\Module05\LINQSamples\bin\Debug\net5.0\LINQSamples.pdb
-D:\CSharpLINQPaulSheriff\Module05\LINQSamples\obj\Debug\net5.0\LINQSamples.csprojAssemblyReference.cache
-D:\CSharpLINQPaulSheriff\Module05\LINQSamples\obj\Debug\net5.0\LINQSamples.GeneratedMSBuildEditorConfig.editorconfig
-D:\CSharpLINQPaulSheriff\Module05\LINQSamples\obj\Debug\net5.0\LINQSamples.AssemblyInfoInputs.cache
-D:\CSharpLINQPaulSheriff\Module05\LINQSamples\obj\Debug\net5.0\LINQSamples.AssemblyInfo.cs
-D:\CSharpLINQPaulSheriff\Module05\LINQSamples\obj\Debug\net5.0\LINQSamples.csproj.CoreCompileInputs.cache
 D:\CSharpLINQPaulSheriff\Module05\LINQSamples\obj\Debug\net5.0\LINQSamples.dll
 D:\CSharpLINQPaulSheriff\Module05\LINQSamples\obj\Debug\net5.0\ref\LINQSamples.dll
 D:\CSharpLINQPaulSheriff\Module05\LINQSamples\obj\Debug\net5.0\LINQSamples.pdb
