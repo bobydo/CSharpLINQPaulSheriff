@@ -1,4 +1,5 @@
 ﻿using LINQSamples.EntityClasses;
+using LINQSamples.RepositoryClasses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -69,6 +70,13 @@ namespace LINQSamples.ViewModelClasses
                 })
                 .OrderBy(result => result.Size)
                 .Select(result => result).ToList();
+        }
+
+        public void DefrredExecution()
+        {
+            IEnumerable<Product> query;
+
+            query = Products.Filter(prod => prod.Color == "Red");
         }
 
     }
