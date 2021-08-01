@@ -77,6 +77,11 @@ namespace LINQSamples.ViewModelClasses
             IEnumerable<Product> query;
 
             query = Products.Filter(prod => prod.Color == "Red");
+
+            foreach(var item in query)
+            {
+                Console.WriteLine(item);
+            }
         }
 
     }
