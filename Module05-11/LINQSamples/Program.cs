@@ -15,7 +15,7 @@ namespace LINQSamples
       };
 
       // Call a sample method
-      vm.GroupJoin();
+      vm.AggregateUsingGroupingMoreEfficient();
 
       // Display Product Collection
       foreach (var item in vm.Products) {
@@ -24,6 +24,7 @@ namespace LINQSamples
 
       // Display Result Text
       Console.WriteLine(vm.ResultText);
+            Console.ReadLine();
     }
   }
 }

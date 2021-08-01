@@ -56,5 +56,36 @@ namespace LINQSamples.ViewModelClasses
                                Sales = sales
                 }).ToList();
         }
+
+        public void LeftOutJoin()
+        {
+            var leftOut =
+                (from prod in Products
+                 join sale in Sales
+                 on prod.ProductID equals sale.ProductID
+                 into sales
+                 from sale in sales.DefaultIfEmpty()
+                 select new 
+                 {
+                    ProductID = prod.ProductID,
+                    Name = prod.Name,
+                    SalesOrderID = sale?.SalesOrderID,
+                    OrderQty = sale?.OrderQty,
+                    UnitPrice = sale?.UnitPrice
+                 }).ToList();
+            var leftOutMethod =
+                Products.SelectMany(
+                    sale =>
+                    Sales.Where(s=> sale.ProductID == s.ProductID)
+                    .DefaultIfEmpty(),// there are no any, create empty
+                    (prod, sale) => new
+                    {
+                        prod.ProductID,
+                        prod.Name,
+                        sale?.SalesOrderID,
+                        sale?.OrderQty,
+                        sale?.UnitPrice
+                    }).OrderBy(ps=>ps.Name);
+        }
     }
 }
